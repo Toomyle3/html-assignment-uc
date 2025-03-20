@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main - Australian Landscape</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fas fa-bars" id="icon-toggle"></i>
+      </label>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./public/logo.png" alt="Logo" />
+        </div>
+        <ul class="links">
+          <li><a class="link" href="./Main.html">Main</a></li>
+          <li><a class="link" href="./About.html">About</a></li>
+          <li><a class="link" href="./Detail.html">Detail</a></li>
+          <li><a class="link" href="./Compare.html">Compare</a></li>
+          <li><a class="link" href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="container">
+          <div class="loadbar" id="loadbar"></div>
+          <div id="slide">
+            <div
+              class="item"
+              style="
+                background-image: url('./public/great_ocean_road_istock.jpg');
+              "
+            >
+              <div class="content">
+                <h2 class="name">Great Ocean Road</h2>
+                <p class="des">
+                  A journey along the Great Ocean Road with the wind blowing in
+                  your hair and the coastline of Victoria extending out in front
+                  of you is a must when visiting Australia.
+                </p>
+                <button
+                  class="seeMore"
+                  data-url="https://nomadsworld.com/best-coastal-landscapes/"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="
+                background-image: url('./public/pinnacles_cape_woolamai.jpg');
+              "
+            >
+              <div class="content">
+                <h2 class="name">Mornington Peninsula & Phillip Island</h2>
+                <p class="des">
+                  Both locations are less than two hours drive south-east from
+                  the centre of Melbourne and provide excellent locations for
+                  creating beautiful coastal landscape photographs.
+                </p>
+                <button
+                  class="seeMore"
+                  data-url="https://nomadsworld.com/best-coastal-landscapes/"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url('./public/kangaroo_island.jpg')"
+            >
+              <div class="content">
+                <h2 class="name">Kangaroo Island</h2>
+                <p class="des">
+                  Kangaroo Island is the third largest island in Australia, so
+                  there’s lots of coastlines to capture.
+                </p>
+                <button
+                  class="seeMore"
+                  data-url="https://nomadsworld.com/best-coastal-landscapes/"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url('./public/mornington_peninsula.jpg')"
+            >
+              <div class="content">
+                <h2 class="name">Mornington Peninsula</h2>
+                <p class="des">Phillip Island.</p>
+                <button
+                  class="seeMore"
+                  data-url="https://nomadsworld.com/best-coastal-landscapes/"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url('./public/pink_lake.jpg')"
+            >
+              <div class="content">
+                <h2 class="name">The Pink Lake</h2>
+                <p class="des">
+                  Lake Hillier seems like an enormous blob of strawberry
+                  milkshake! The dazzling waters of Lake Hillier can be found
+                  near Esperance.
+                </p>
+                <button
+                  class="seeMore"
+                  data-url="https://nomadsworld.com/best-coastal-landscapes/"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="prev"><i class="fas fa-angle-left"></i></button>
+            <button id="next"><i class="fas fa-angle-right"></i></button>
+          </div>
+        </section>
+        <section class="cards">
+          <div class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url('./public/great_ocean_road_istock.jpg');
+              "
+            ></div>
+            <div class="card-content">
+              <h4>Twelve Apostles</h4>
+              <p>
+                Located along the Great Ocean Road, these iconic limestone
+                stacks rise majestically from the Southern Ocean near Port
+                Campbell.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url('./public/pinnacles_cape_woolamai.jpg');
+              "
+            ></div>
+            <div class="card-content">
+              <h4>Cape Woolamai</h4>
+              <p>
+                A stunning headland on Phillip Island with dramatic cliffs and
+                panoramic views, perfect for hiking and photography.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('./public/kangaroo_island.jpg')"
+            ></div>
+            <div class="card-content">
+              <h4>Flinders Chase</h4>
+              <p>
+                A national park on Kangaroo Island featuring rugged coastlines
+                and the famous Remarkable Rocks formations.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('./public/mornington_peninsula.jpg')"
+            ></div>
+            <div class="card-content">
+              <h4>Point Nepean</h4>
+              <p>
+                A historic coastal reserve on the Mornington Peninsula with
+                breathtaking views of Bass Strait and Port Phillip Bay.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('./public/pink_lake.jpg')"
+            ></div>
+            <div class="card-content">
+              <h4>Middle Island</h4>
+              <p>
+                Home to Lake Hillier, this remote location off Esperance boasts
+                a vibrant pink lake surrounded by lush greenery.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <h4>&copy; 2025 Australian Landscape</h4>
+      <a href="mailto:lehoangminh9938@gmail.com">lehoangminh9938@gmail.com</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

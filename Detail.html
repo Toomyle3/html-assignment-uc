@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail - Australian Landscape</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fas fa-bars" id="icon-toggle"></i>
+      </label>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./public/logo.png" alt="Logo" />
+        </div>
+        <ul class="links">
+          <li><a class="link" href="./Main.html">Main</a></li>
+          <li><a class="link" href="./About.html">About</a></li>
+          <li><a class="link" href="./Detail.html">Detail</a></li>
+          <li><a class="link" href="./Compare.html">Compare</a></li>
+          <li><a class="link" href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <section class="detail-section">
+          <h1>Explore Australian Landscapes</h1>
+          <p>Select a landscape to view its details, image, and video.</p>
+          <input
+            type="radio"
+            id="great-ocean"
+            name="landscape"
+            class="landscape-input"
+            checked
+          />
+          <label for="great-ocean" class="landscape-label"
+            >Great Ocean Road</label
+          >
+          <input
+            type="radio"
+            id="mornington"
+            name="landscape"
+            class="landscape-input"
+          />
+          <label for="mornington" class="landscape-label"
+            >Mornington Peninsula</label
+          >
+
+          <input
+            type="radio"
+            id="kangaroo"
+            name="landscape"
+            class="landscape-input"
+          />
+          <label for="kangaroo" class="landscape-label">Kangaroo Island</label>
+          <input
+            type="radio"
+            id="pink-lake"
+            name="landscape"
+            class="landscape-input"
+          />
+          <label for="pink-lake" class="landscape-label">The Pink Lake</label>
+          <div class="detail-container">
+            <div class="detail-item" id="great-ocean-detail">
+              <div class="detail-content">
+                <div
+                  class="detail-image"
+                  style="
+                    background-image: url('./public/great_ocean_road_istock.jpg');
+                  "
+                ></div>
+                <h3>Great Ocean Road</h3>
+                <p>
+                  A journey along the Great Ocean Road with the wind blowing in
+                  your hair and the coastline of Victoria extending out in front
+                  of you is a must when visiting Australia.
+                </p>
+                <iframe
+                  src="https://www.youtube.com/embed/K3QdYOl1AJU"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="detail-item" id="mornington-detail">
+              <div class="detail-content">
+                <div
+                  class="detail-image"
+                  style="
+                    background-image: url('./public/mornington_peninsula.jpg');
+                  "
+                ></div>
+                <h3>Mornington Peninsula</h3>
+                <p>
+                  Less than two hours from Melbourne, this area offers stunning
+                  coastal views and is a haven for photographers and nature
+                  lovers.
+                </p>
+                <iframe
+                  src="https://www.youtube.com/embed/yiGu6KBYhws"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="detail-item" id="kangaroo-detail">
+              <div class="detail-content">
+                <div
+                  class="detail-image"
+                  style="background-image: url('./public/kangaroo_island.jpg')"
+                ></div>
+                <h3>Kangaroo Island</h3>
+                <p>
+                  The third largest island in Australia, featuring rugged
+                  coastlines and unique wildlife.
+                </p>
+                <iframe
+                  src="https://www.youtube.com/embed/O6pJtVMqBIw"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="detail-item" id="pink-lake-detail">
+              <div class="detail-content">
+                <div
+                  class="detail-image"
+                  style="background-image: url('./public/pink_lake.jpg')"
+                ></div>
+                <h3>The Pink Lake</h3>
+                <p>
+                  Lake Hillier near Esperance dazzles with its strawberry
+                  milkshake-like waters.
+                </p>
+                <iframe
+                  src="https://www.youtube.com/embed/cUfSn9utjMo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <h4>&copy; 2025 Australian Landscape</h4>
+      <a href="mailto:lehoangminh9938@gmail.com">lehoangminh9938@gmail.com</a>
+    </footer>
+  </body>
+</html>

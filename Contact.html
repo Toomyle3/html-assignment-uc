@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Australian Landscape</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fas fa-bars" id="icon-toggle"></i>
+      </label>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./public/logo.png" alt="logo" />
+        </div>
+        <ul class="links">
+          <li class="link"><a class="link" href="./Main.html">Main</a></li>
+          <li class="link"><a class="link" href="./About.html">About</a></li>
+          <li class="link"><a class="link" href="./Detail.html">Detail</a></li>
+          <li class="link">
+            <a class="link" href="./Compare.html">Compare</a>
+          </li>
+          <li class="link">
+            <a class="link" href="./Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <main style="padding-top: 100px">
+        <section class="contact-section">
+          <h1>Contact Us</h1>
+          <p>
+            We’d love to hear from you! Reach out with any questions or
+            feedback.
+          </p>
+          <div class="contact-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p><i class="fas fa-envelope"></i> lehoangminh9938@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+              <p><i class="fas fa-map-marker-alt"></i> Canberra, Australia</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <h4 style="margin-bottom: 0px">© 2025 Australian Landscape</h4>
+      <a
+        style="
+          margin-top: 0px;
+          text-decoration: none;
+          color: rgb(224, 229, 232);
+        "
+        href="mailto:lehoangminh9938@gmail.com"
+        >lehoangminh9938@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>

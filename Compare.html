@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare - Australian Landscape</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      #icon-toggle {
+        color: aliceblue;
+        -webkit-text-stroke: 1px #1f1e1e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fas fa-bars" id="icon-toggle"></i>
+      </label>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./public/logo.png" alt="logo" />
+        </div>
+        <ul class="links">
+          <li class="link"><a class="link" href="./Main.html">Main</a></li>
+          <li class="link"><a class="link" href="./About.html">About</a></li>
+          <li class="link"><a class="link" href="./Detail.html">Detail</a></li>
+          <li class="link">
+            <a class="link" href="./Compare.html">Compare</a>
+          </li>
+          <li class="link">
+            <a class="link" href="./Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <main style="padding-top: 100px">
+        <section class="compare-section">
+          <h1>⛰ Compare Australian Landscapes</h1>
+          <p>Select two landscapes to compare their features side by side.</p>
+          <div class="selectors-container">
+            <div class="selector selector-left">
+              <h3>Left Landscape</h3>
+              <input
+                type="radio"
+                id="left-great-ocean"
+                name="left-landscape"
+                checked
+                class="landscape-input"
+              />
+              <label for="left-great-ocean" class="landscape-label"
+                >Great Ocean Road</label
+              >
+              <input
+                type="radio"
+                id="left-mornington"
+                name="left-landscape"
+                class="landscape-input"
+              />
+              <label for="left-mornington" class="landscape-label"
+                >Mornington Peninsula</label
+              >
+              <input
+                type="radio"
+                id="left-kangaroo"
+                name="left-landscape"
+                class="landscape-input"
+              />
+              <label for="left-kangaroo" class="landscape-label"
+                >Kangaroo Island</label
+              >
+              <input
+                type="radio"
+                id="left-pink-lake"
+                name="left-landscape"
+                class="landscape-input"
+              />
+              <label for="left-pink-lake" class="landscape-label"
+                >The Pink Lake</label
+              >
+              <div class="table-left">
+                <div class="table-item" id="left-great-ocean-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Victoria, near Melbourne</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Coastal cliffs, beaches</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Twelve Apostles, scenic drives</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mediterranean climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>December - April</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Wine tasting, beach relaxation</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Penguins, seals, dolphins</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="left-mornington-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Victoria, near Melbourne</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Beaches, headlands, rolling hills</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Cape Woolamai, Point Nepean, hot springs</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Temperate coastal climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>November - March</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Swimming, hiking, winery tours</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Dolphins, seals, migratory birds</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="left-kangaroo-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>South Australia, off the coast</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Rugged coast, bushland, dunes</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>
+                        Flinders Chase National Park, Remarkable Rocks, Admirals
+                        Arch
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mild temperate climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>September - February</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Wildlife spotting, bushwalking, fishing</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Kangaroos, koalas, sea lions, echidnas</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="left-pink-lake-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Western Australia, Middle Island near Esperance</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Salt lake, coastal scrub</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Pink Lake (vibrant pink water), nearby beaches</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mediterranean-like with dry summers</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>October - March</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Scenic flights, photography, boating</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Seabirds, fish, small reptiles</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="selector selector-right">
+              <h3>Right Landscape</h3>
+              <input
+                type="radio"
+                id="right-great-ocean"
+                name="right-landscape"
+                class="landscape-input"
+              />
+              <label for="right-great-ocean" class="landscape-label"
+                >Great Ocean Road</label
+              >
+              <input
+                type="radio"
+                id="right-mornington"
+                name="right-landscape"
+                checked
+                class="landscape-input"
+              />
+              <label for="right-mornington" class="landscape-label"
+                >Mornington Peninsula</label
+              >
+              <input
+                type="radio"
+                id="right-kangaroo"
+                name="right-landscape"
+                class="landscape-input"
+              />
+              <label for="right-kangaroo" class="landscape-label"
+                >Kangaroo Island</label
+              >
+              <input
+                type="radio"
+                id="right-pink-lake"
+                name="right-landscape"
+                class="landscape-input"
+              />
+              <label for="right-pink-lake" class="landscape-label"
+                >The Pink Lake</label
+              >
+              <div class="table-right">
+                <div class="table-item" id="right-great-ocean-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Victoria, near Melbourne</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Coastal cliffs, beaches</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Twelve Apostles, scenic drives</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mediterranean climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>December - April</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Wine tasting, beach relaxation</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Penguins, seals, dolphins</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="right-mornington-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Victoria, near Melbourne</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Beaches, headlands, rolling hills</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Cape Woolamai, Point Nepean, hot springs</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Temperate coastal climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>November - March</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Swimming, hiking, winery tours</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Dolphins, seals, migratory birds</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="right-kangaroo-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>South Australia, off the coast</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Rugged coast, bushland, dunes</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>
+                        Flinders Chase National Park, Remarkable Rocks, Admirals
+                        Arch
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mild temperate climate</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>September - February</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Wildlife spotting, bushwalking, fishing</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Kangaroos, koalas, sea lions, echidnas</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table-item" id="right-pink-lake-table">
+                  <table>
+                    <tr>
+                      <th>Location</th>
+                      <td>Western Australia, Middle Island near Esperance</td>
+                    </tr>
+                    <tr>
+                      <th>Terrain</th>
+                      <td>Salt lake, coastal scrub</td>
+                    </tr>
+                    <tr>
+                      <th>Highlights</th>
+                      <td>Pink Lake (vibrant pink water), nearby beaches</td>
+                    </tr>
+                    <tr>
+                      <th>Climate</th>
+                      <td>Mediterranean-like with dry summers</td>
+                    </tr>
+                    <tr>
+                      <th>Best Time to Visit</th>
+                      <td>October - March</td>
+                    </tr>
+                    <tr>
+                      <th>Activities</th>
+                      <td>Scenic flights, photography, boating</td>
+                    </tr>
+                    <tr>
+                      <th>Wildlife</th>
+                      <td>Seabirds, fish, small reptiles</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <h4 style="margin-bottom: 0px">&copy; 2025 Australian Landscape</h4>
+      <a
+        style="
+          margin-top: 0px;
+          text-decoration: none;
+          color: rgb(224, 229, 232);
+        "
+        href="mailto:lehoangminh9938@gmail.com"
+        >lehoangminh9938@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>
